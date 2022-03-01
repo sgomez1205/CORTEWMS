@@ -31,7 +31,7 @@ void menu(Sistema sistema){
                     sistema.mostrarPropietarios();
 
                     break;
-            case 2: 
+            case 2: sistema.combinarId(1234, 56789 );
                     break;
             case 3: 
                     break;

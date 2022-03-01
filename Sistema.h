@@ -6,6 +6,7 @@
 #include "Propietario.h"
 #include "Mascota.h"
 #include "PropietarioxMascota.h"
+//#define  NUMDECIMAL = 0.00001
 
 using std::cout;
 using std::cin;
@@ -33,6 +34,7 @@ class Sistema {
         void inicializacionDatosPropietario();
         void inicializacionDatosMascota();
         void inicializarDatos();
+        double combinarId(double idProp, double idMasc );
         Sistema();
 };
 

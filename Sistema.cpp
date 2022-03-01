@@ -56,3 +56,12 @@ void Sistema::mostrarPropietarios(){
     }
 }
 
+double Sistema::combinarId(double idProp, double idMasc ){
+    double idPropxMasc, temp;
+    const double NUMDECIMAL = 0.000001;
+    temp = idMasc * NUMDECIMAL;
+    idPropxMasc = idProp + temp;
+    cout << temp << "\n";
+    cout << idPropxMasc;
+}
+
