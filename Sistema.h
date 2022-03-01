@@ -17,6 +17,7 @@ class Sistema {
         vector<Propietario> propietarios;
         vector<Mascota> mascotas;
         vector<PropietarioxMascota> propietariosxMascotas;
+        map <Propietario, Mascota> mapPropietariosxMascota;
     public:
         void agregarDatosPropietario();
         void agregarDatosMascota();
