@@ -3,25 +3,8 @@
 
 
 
-Sistema::Sistema()
-{
-
-    cout << "Entre al constructor de administracion \n";
-    /**nombreProp = ' ';
-    idProp = 0;
-    email = ' ';
-    contIds = 1; // Un incremental automatico de ids de propiedades
-    inicializarDatos();
-
-    cout << "Terminé la inicializacion \n";
-    **/
+Sistema::Sistema(){
 }
-/**Sistema::Sistema(){
-    cout<<"Entre al constructor y Chapid es un manoseador Pastuso.";
-    inicializacionDatosPropietario();
-    inicializacionDatosMascota();
-    
-}**/
 
 void Sistema::agregarDatosPropietario(){
     string nombreProp, email;
@@ -38,7 +21,6 @@ void Sistema::agregarDatosPropietario(){
     Propietario prop(idProp, nombreProp, email, telefono);
     propietarios.push_back(prop);
 }
-
 
 void Sistema::agregarDatosMascota(){
     string nombreMasc, raza, tipoSangre, fechaM;

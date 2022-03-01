@@ -29,6 +29,7 @@ class Mascota{
         bool getEstatus();
         string getFecha();
         int getEdad();
+        Mascota();
         Mascota(string nombreMasc, string raza, int edad, int tipo, double peso, string tipoSangre, double idMasc, bool estatus, string fechaM);
         void mostrarDatosMascota();
 };

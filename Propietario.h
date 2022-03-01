@@ -20,6 +20,7 @@ class Propietario{
         string getNombreProp();
         string getEmail();
         double getTelefono();
+        Propietario();
         Propietario(double idProp, string nombreProp, string email,double telefono);
         void mostarDatosPropietario();
 };
