@@ -5,6 +5,7 @@
 #include <vector>
 #include "Propietario.h"
 #include "Mascota.h"
+#include "PropietarioxMascota.h"
 
 using std::cout;
 using std::cin;
@@ -14,6 +15,7 @@ class Sistema {
     private:
         vector<Propietario> propietarios;
         vector<Mascota> mascotas;
+        vector<PropietarioxMascota> propietariosxMascotas;
     public:
         void agregarDatosPropietario();
         void agregarDatosMascota();

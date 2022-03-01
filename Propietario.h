@@ -14,7 +14,6 @@ class Propietario{
         string nombreProp;
         string email;
         double telefono;
-        vector<double> mascota;
     public:
         double getIdProp();
         string getNombreProp();

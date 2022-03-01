@@ -19,7 +19,6 @@ class Mascota{
         double idMasc;
         bool estatus;     //bool: true->Vivo, false->Muerto
         string fechaM;
-        vector<double> propietarios;
     public:
         string getNombreMasc();
         double getIdMasc();
