@@ -2,7 +2,6 @@
 #include "Propietario.h"
 
 Propietario::Propietario(){
-    cout << "Entre al constructor con todos los parametros Prop";
     this -> idProp = 0;
     this -> nombreProp = "";
     this -> email = "";
@@ -10,20 +9,18 @@ Propietario::Propietario(){
 }
 
 Propietario::Propietario(double idProp, string nombreProp, string email,double telefono){
-    cout << "Entre al constructor con todos los parametros Prop";
     this -> idProp = idProp;
     this -> nombreProp = nombreProp;
     this -> email = email;
     this -> telefono = telefono;
 }
 
-void Propietario::mostarDatosPropietario(){
-    cout << "**Informacion Mascota**\n";
+void Propietario::mostrarDatosPropietario(){
+    cout << "\n**Informacion Propietario**\n";
     cout << "-Nombre: " << nombreProp << "\n";
     cout << "-IdPropietario: " << idProp << "\n";
     cout << "-Email: " << email << "\n";
     cout << "-Telefono: " << telefono << "\n";
-    cout << "\n";
 }
 
 double Propietario::getIdProp(){

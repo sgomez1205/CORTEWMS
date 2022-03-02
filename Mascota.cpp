@@ -2,7 +2,6 @@
 #include "Mascota.h"
 
 Mascota::Mascota(){
-    cout << "Entre al constructor con todos los parametros MASC";
     this -> nombreMasc = "";
     this -> idMasc = 0;
     this -> raza = "";
@@ -15,7 +14,6 @@ Mascota::Mascota(){
 }
 
 Mascota::Mascota(string nombreMasc, string raza, int edad, int tipo, double peso,string tipoSangre, double idMasc, bool status, string fechaM){
-    cout << "Entre al constructor con todos los parametros MASC";
     this -> nombreMasc = nombreMasc;
     this -> idMasc = idMasc;
     this -> raza = raza;
@@ -28,16 +26,15 @@ Mascota::Mascota(string nombreMasc, string raza, int edad, int tipo, double peso
 }
 
 void Mascota::mostrarDatosMascota(){
-    cout << "**Informacion Mascota**\n";
+    cout << "\n**Informacion Mascota**\n";
     cout << "-Nombre: " << nombreMasc << "\n";
     cout << "-IdMascota: " << idMasc << "\n";
     cout << "-Edad: " << edad << "\n";
-    cout << "-Tipo: " << tipo << "\n";
+    cout << "-Tipo(1 Perro, 2 Gato, 3 Otro): " << tipo << "\n";
     cout << "-Peso: " << peso << "\n";
     cout << "-Tipo De Sangre: " << tipoSangre << "\n";
     cout << "-Estatu: " << estatus << "\n";
     cout << "-Fecha De Muerte: " << fechaM << "\n";
-    cout << "\n";
 }
 
 string Mascota::getNombreMasc(){

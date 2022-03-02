@@ -2,11 +2,9 @@
 #define PROPIETARIO_H 
 
 #include <iostream>
-using std::cout;
-#include <vector>
 
+using std::cout;
 using std::string;
-using std::vector;
 
 class Propietario{
     private:
@@ -21,7 +19,7 @@ class Propietario{
         double getTelefono();
         Propietario();
         Propietario(double idProp, string nombreProp, string email,double telefono);
-        void mostarDatosPropietario();
+        void mostrarDatosPropietario();
 };
 
 #endif

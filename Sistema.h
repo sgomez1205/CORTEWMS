@@ -2,12 +2,12 @@
 #define SISTEMA_H
 
 #include <iostream>
+#include <iterator>
 #include <vector>
-#include "Propietario.h"
-#include "Mascota.h"
+#include <map>
 #include "PropietarioxMascota.h"
-//#define  NUMDECIMAL = 0.00001
 
+using namespace std;
 using std::cout;
 using std::cin;
 using std::string;
@@ -16,27 +16,25 @@ class Sistema {
     private:
         vector<Propietario> propietarios;
         vector<Mascota> mascotas;
-        vector<PropietarioxMascota> propietariosxMascotas;
         map <Propietario, Mascota> mapPropietariosxMascota;
+        //mapa: { prop : <mascota>, ... etc }
     public:
+        Sistema();
+        void inicializarDatos();
+
         void agregarDatosPropietario();
         void agregarDatosMascota();
         void modificar(double idProp);
         void eliminar(double idProp);
-        void listar();
+        void listarPropietarios();
+        void listarMascotas();
         int contarProp();
-        void mostrarPropietarios();
-        void mostrarMascotas();
         void consultarPropietariosDeMascota(double idMasc);
-        void consultarMascotasDepropietario(double isProp);
+        void consultarMascotasDepropietario(double idProp);
         void asociarMascota(double idProp);
-        void cambiarEstattus();
+        void asociarPropietario(double idMasc);
+        void cambiarEstatus();
         void eliminarPropietarioDeMascota();
-        void inicializacionDatosPropietario();
-        void inicializacionDatosMascota();
-        void inicializarDatos();
-        double combinarId(double idProp, double idMasc );
-        Sistema();
 };
 
 #endif

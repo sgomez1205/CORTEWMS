@@ -1,7 +1,6 @@
 #ifndef PROPIETARIOXMASCOTA_H
 #define PROPIETARIOXMASCOTA_H
 
-
 #include "Propietario.h"
 #include "Mascota.h"
 

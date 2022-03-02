@@ -2,11 +2,9 @@
 #define MASCOTA_H
 
 #include <iostream>
-#include <vector>
 
 using std::cout;
 using std::string;
-using std::vector;
 
 class Mascota{
     private:
