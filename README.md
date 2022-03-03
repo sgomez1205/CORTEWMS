@@ -45,7 +45,7 @@ de identidad.
   * Use Maps como la estructura de datos para almacenar la información de los propietarios
 
 # UML
-![UML Veterinaria W.S.M.drawio.png- AVANCE.png- AVANCE.png- AVANCE](https://github.com/sgomez1205/CORTEWMS/blob/master/UML%20Veterinaria%20W.S.M.drawio.png-%20AVANCE.png-%20AVANCE.png-%20AVANCE)
+![UML-TRABAJO POO](https://github.com/sgomez1205/CORTEWMS/blob/master/UML-TRABAJO%20POO.png)
 
 ## Fecha De Entrega: 7 marzo del 2022 / 11:59 PM
 * *Link UML: https://drive.google.com/file/d/1ot37AoLYy98uTDRAX8Fur9H-gLAky184/view?usp=sharing*
