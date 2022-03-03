@@ -20,9 +20,7 @@ class Sistema {
         vector<PropietarioxMascota> propietarioxMascota;
     public:
         Sistema();
-        void inicializarDatos();
-        void relacion();
-
+        
         void agregarDatosPropietario();
         void agregarDatosMascota();
         void modificarPropietario(double idProp, int x);
@@ -32,10 +30,9 @@ class Sistema {
         int contarProp();
         void consultarPropietariosDeMascota(double idMasc);
         void consultarMascotasDepropietario(double idProp);
-        void asociarMascota(double idProp);
-        void asociarPropietario(double idMasc);
+        void asociarPropietarioxMascota(double idProp, double idMasc);
         void cambiarEstatus(double idMasc, string fechaM);
-        void eliminarPropietarioDeMascota();
+        void eliminarPropietarioDeMascota(double idProp);
 };
 
 #endif

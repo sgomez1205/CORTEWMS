@@ -8,10 +8,6 @@ Sistema::Sistema(){
     
 }
 
-void relacion(){
-    return;
-}
-
 void Sistema::agregarDatosPropietario(){
     string nombreProp, email;
     double idProp, telefono;
@@ -144,6 +140,9 @@ void Sistema::consultarPropietariosDeMascota(double idMasc){
             propietarioxMascota[i].getPropietario().mostrarDatosPropietario();
         }
     }
+    if( ban == 0 ){
+        cout << "La Mascota No Tiene Propietario O No Existe\n";
+    }
     return;
 }
 
@@ -158,24 +157,34 @@ void Sistema::consultarMascotasDepropietario(double idProp){
             propietarioxMascota[i].getMascota().mostrarDatosMascota();
         }
     }
+    if( ban == 0 ){
+        cout << "El Propietario No Tiene Mascotas O No Existe\n";
+    }
     return;
 }
 
-void Sistema::asociarMascota(double idProp){
-    /*PropietarioxMascota temp;
-    Propietario tempProp;
-    tempProp = mapPropietarios(idProp).//TOCA HACER UN [VECTOR PUSH.BACK(Propietario)]
-    */
-    return;
-}
-
-void Sistema::asociarPropietario(double idMasc){
+void Sistema::asociarPropietarioxMascota(double idProp, double idMasc){
+    Propietario tempP;
+    Mascota tempM;
+    if(mapPropietarios.find(idProp) != mapPropietarios.end() && mapMascotas.find(idMasc) != mapMascotas.end()){
+        cout << "Se Relacionara La Mascota Y El Usuario\n";
+        tempP = this -> mapPropietarios[idProp];
+        tempM = this -> mapMascotas[idMasc];
+        PropietarioxMascota objet1(tempP, tempM);
+        propietarioxMascota.push_back(objet1);
+    }
+    else{
+        cout << "No Existe El Propietario o La Mascota";
+    }
+    cout << "\n";
+    //cout << propietarioxMascota[0].getPropietario().getNombreProp() << "\n";
+    //cout << propietarioxMascota[0].getMascota().getNombreMasc() << "\n";
     return;
 }
 
 void Sistema::cambiarEstatus(double idMasc, string fechaM){
     if(mapMascotas.find(idMasc) != mapMascotas.end()){
-        if(mapMascotas[idMasc].getEstatus() == 1){     //Vivo
+        if(mapMascotas[idMasc].getEstatus() == 1){
             mapMascotas[idMasc].setEstatus(0);
             mapMascotas[idMasc].setFecha(fechaM);
         }
@@ -187,7 +196,7 @@ void Sistema::cambiarEstatus(double idMasc, string fechaM){
     return;
 }
 
-void Sistema::eliminarPropietarioDeMascota(){
+void Sistema::eliminarPropietarioDeMascota(double idProp){      //TERMINAR
     return;
 }
 

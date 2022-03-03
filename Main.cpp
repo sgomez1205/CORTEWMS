@@ -6,7 +6,8 @@ using std::cin;
 using std::string; 
 
 void menu(Sistema sistema){
-    int opc = 0, x = 0, idProp = 0, idMasc = 0;
+    int opc = 0, x = 0; 
+    double idProp = 0, idMasc = 0;
     string fecha = "dd/mm/aaaa";
     do{
         cout << "\n" << "BIENVENIDOS A LA VETERINARIA W.S.M\n";
@@ -18,10 +19,9 @@ void menu(Sistema sistema){
         cout << "6. Cantidad Propietarios Registrados.\n";
         cout << "7. Consultar Propietarios De Una Mascota.\n";
         cout << "8. Consultar Mascotas De Un Propietario.\n";
-        cout << "9. Asociar Nueva Mascota A Un Propietario.\n";
-        cout << "10. Asociar Nuevo Propietario A Una Mascota.\n";
-        cout << "11. Cambiar Estatus De Mascota.\n";
-        cout << "12. Eliminar Propietario De Una Mascota.\n";
+        cout << "9. Asociar Propietario Y Mascota.\n";
+        cout << "10. Cambiar Estatus De Mascota.\n";
+        cout << "11. Eliminar Propietario De Una Mascota.\n";
         cout << "0. Salir\n";
         cout << "opc: ";
         x = 0;
@@ -64,28 +64,30 @@ void menu(Sistema sistema){
                     break;
             case 7: cout << "ID De Mascota: ";
                     cin >> idMasc;
-                    sistema.consultarPropietariosDeMascota(idMasc);   //REVISAR Y PROBAR
+                    sistema.consultarPropietariosDeMascota(idMasc);
                     break;
             case 8: cout << "ID De Propietario: ";
                     cin >> idProp;
-                    sistema.consultarMascotasDepropietario(idProp);    //REVISAR Y PROBAR
+                    sistema.consultarMascotasDepropietario(idProp);
                     break;
-            case 9:
+            case 9: cout << "ID De Propietario A Asociar : ";       //REVISAR
+                    cin >> idProp; 
+                    cout << "ID De Mascota A Asociar: ";
+                    cin >> idMasc;
+                    sistema.asociarPropietarioxMascota(idProp, idMasc);
                     break;
-            case 10:
-                    break;
-            case 11:cout << "\nBienvenido!\nID Mascota: ";
+            case 10:cout << "\nBienvenido!\nID Mascota: ";
                     cin >> idMasc;
                     cout << "Ingrese Fecha De Defuncion(dd/mm/aaaa): ";
                     cin >> fecha;
                     sistema.cambiarEstatus(idMasc, fecha);
                     break;
-            case 12:
+            case 11:sistema.eliminarPropietarioDeMascota(idProp);     //TERMINAR
                     break;
             default: break;
         }
     }while(opc != 0);
-    cout << "Muchas Gracias Por Usar Nuestro Sistema, Hasta Pronto\n";
+    cout << "Muchas Gracias Por Usar Nuestro Sistema, Hasta Pronto!!!\n";
 }
 
 int main(){
@@ -93,4 +95,3 @@ int main(){
     menu(sistema);
     return 0;
 }
-

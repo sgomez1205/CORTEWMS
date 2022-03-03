@@ -58,19 +58,7 @@ string Mascota::getNombreMasc(){
 double Mascota::getIdMasc(){
     return this -> idMasc;
 }
-/*
-int Mascota::getTipo(){
-    return this -> tipo;
-}
 
-double Mascota::getPeso(){
-    return this -> peso;
-}
-
-string Mascota::getTipoSangre(){
-    return this -> tipoSangre;
-}
-*/
 int Mascota::getEstatus(){
     return this -> estatus;
 }
@@ -86,7 +74,4 @@ string Mascota::getFecha(){
 void Mascota::setFecha( string fechaM ){
     this -> fechaM = fechaM;
 }
-/*
-int Mascota::getEdad(){
-    return this -> edad;
-}*/
+
