@@ -21,6 +21,7 @@ void Propietario::mostrarDatosPropietario(){
     cout << "-IdPropietario: " << idProp << "\n";
     cout << "-Email: " << email << "\n";
     cout << "-Telefono: " << telefono << "\n";
+    return;
 }
 
 double Propietario::getIdProp(){
@@ -36,4 +37,12 @@ string Propietario::getEmail(){
 
 double Propietario::getTelefono(){
     return this -> telefono;
+}
+
+void Propietario::setEmail(string email){
+    this->email = email;
+}
+
+void Propietario::setTelefono(double telefono){
+    this->telefono = telefono;
 }

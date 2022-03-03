@@ -1,14 +1,8 @@
 #include "PropietarioxMascota.h"
 
-PropietarioxMascota::PropietarioxMascota()
-    : id(0)
-{
-}
-
-PropietarioxMascota::PropietarioxMascota(Propietario propietario, Mascota mascota, double id){
+PropietarioxMascota::PropietarioxMascota(Propietario propietario, Mascota mascota){
     this->propietario = propietario;
     this->mascota = mascota;
-    this->id = id;
 }
 
 Mascota PropietarioxMascota::getMascota(){
@@ -17,10 +11,6 @@ Mascota PropietarioxMascota::getMascota(){
 
 Propietario PropietarioxMascota::getPropietario(){
     return this->propietario;
-}
-
-double PropietarioxMascota::getId(){
-    return this->id;
 }
 
 

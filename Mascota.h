@@ -15,19 +15,22 @@ class Mascota{
         int edad;
         string tipoSangre;
         double idMasc;
-        bool estatus;     //bool: true->Vivo, false->Muerto
+        int estatus;     //bool: true->Vivo, false->Muerto
         string fechaM;
     public:
+        Mascota();
+        Mascota(string nombreMasc, string raza, int edad, int tipo, double peso, string tipoSangre, double idMasc, int estatus, string fechaM);
+
         string getNombreMasc();
         double getIdMasc();
-        int getTipo();
+        /*int getTipo();
         double getPeso();
-        string getTipoSangre();
-        bool getEstatus();
+        string getTipoSangre();*/
+        int getEstatus();
+        void setEstatus(int estatus);
         string getFecha();
-        int getEdad();
-        Mascota();
-        Mascota(string nombreMasc, string raza, int edad, int tipo, double peso, string tipoSangre, double idMasc, bool estatus, string fechaM);
+        void setFecha(string fechaM);
+        //int getEdad();
         void mostrarDatosMascota();
 };
 

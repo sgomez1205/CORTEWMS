@@ -13,12 +13,15 @@ class Propietario{
         string email;
         double telefono;
     public:
+        Propietario();
+        Propietario(double idProp, string nombreProp, string email,double telefono);
+        
+        void setEmail(string);
+        void setTelefono(double);
         double getIdProp();
         string getNombreProp();
         string getEmail();
         double getTelefono();
-        Propietario();
-        Propietario(double idProp, string nombreProp, string email,double telefono);
         void mostrarDatosPropietario();
 };
 
