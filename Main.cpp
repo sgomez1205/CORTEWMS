@@ -37,22 +37,22 @@ void menu(Sistema sistema){
                         sistema.agregarDatosMascota();
                     }
                     else if ( x == 3 ){
-                        cout << "\n**Propietario**\n";
+                        cout << "\n****Propietario****\n";
                         sistema.agregarDatosPropietario();
-                        cout << "\n**Mascota**\n";
+                        cout << "\n****Mascota****\n";
                         sistema.agregarDatosMascota();
                     }
                     else{
                         cout << "\nError\n";
                     }
                     break;
-            case 2: cout << "\nBienvenido!\nID Usuario A Modificar: ";
+            case 2: cout << "\nID Usuario A Modificar: ";
                     cin >> idProp;
                     cout << "\nQue Desea Modificar:\n(1)Email\n(2)Telefono";
                     cin >> x;
                     sistema.modificarPropietario(idProp, x);
                     break;
-            case 3: cout << "\nBienvenido!\nID Usuario A Eliminar: ";
+            case 3: cout << "\nID Usuario A Eliminar: ";
                     cin >> idProp;
                     sistema.eliminarPropietario(idProp);
                     break;
@@ -60,34 +60,38 @@ void menu(Sistema sistema){
                     break;
             case 5: sistema.listarMascotas();
                     break;
-            case 6: cout << "Hay una cantidad de: " << sistema.contarProp() << " propietarios registrados\n";
+            case 6: cout << "Hay Una Cantidad De: " << sistema.contarProp() << " Propietarios Registrados\n";
                     break;
             case 7: cout << "ID De Mascota: ";
                     cin >> idMasc;
+                    cout << "\n****Propietarios****\n";
                     sistema.consultarPropietariosDeMascota(idMasc);
                     break;
             case 8: cout << "ID De Propietario: ";
                     cin >> idProp;
+                    cout << "\n****Mascotas****\n";
                     sistema.consultarMascotasDepropietario(idProp);
                     break;
-            case 9: cout << "ID De Propietario A Asociar : ";       //REVISAR
+            case 9: cout << "ID De Propietario A Asociar: ";
                     cin >> idProp; 
                     cout << "ID De Mascota A Asociar: ";
                     cin >> idMasc;
                     sistema.asociarPropietarioxMascota(idProp, idMasc);
                     break;
-            case 10:cout << "\nBienvenido!\nID Mascota: ";
+            case 10:cout << "\nID Mascota: ";
                     cin >> idMasc;
                     cout << "Ingrese Fecha De Defuncion(dd/mm/aaaa): ";
                     cin >> fecha;
                     sistema.cambiarEstatus(idMasc, fecha);
                     break;
-            case 11:sistema.eliminarPropietarioDeMascota(idProp);     //TERMINAR
+            case 11:cout << "ID De Propietario A Eliminar: ";
+                    cin >> idProp;
+                    sistema.eliminarPropietarioDeMascota(idProp);
                     break;
             default: break;
         }
     }while(opc != 0);
-    cout << "Muchas Gracias Por Usar Nuestro Sistema, Hasta Pronto!!!\n";
+    cout << "Muchas Gracias Por Usar Nuestro Sistema, Vuelva Pronto!!!\n";
 }
 
 int main(){

@@ -26,7 +26,7 @@ Mascota::Mascota(string nombreMasc, string raza, int edad, int tipo, double peso
 }
 
 void Mascota::mostrarDatosMascota(){
-    cout << "\n**Informacion Mascota**\n";
+    cout << "-Info:\n";
     cout << "-Nombre: " << nombreMasc << "\n";
     cout << "-IdMascota: " << idMasc << "\n";
     cout << "-Edad(Años): " << edad << "\n";

@@ -16,7 +16,7 @@ Propietario::Propietario(double idProp, string nombreProp, string email,double t
 }
 
 void Propietario::mostrarDatosPropietario(){
-    cout << "\n**Informacion Propietario**\n";
+    cout << "-Info:\n";
     cout << "-Nombre: " << nombreProp << "\n";
     cout << "-IdPropietario: " << idProp << "\n";
     cout << "-Email: " << email << "\n";

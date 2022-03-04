@@ -104,7 +104,7 @@ void Sistema::eliminarPropietario(double idProp){
 }
 
 void Sistema::listarPropietarios(){
-    cout << "===PROPIETARIOS===";
+    cout << "****PROPIETARIOS****";
     for(itrProp = mapPropietarios.begin(); itrProp != mapPropietarios.end(); ++itrProp){
         itrProp->second.mostrarDatosPropietario();
     }
@@ -113,7 +113,7 @@ void Sistema::listarPropietarios(){
 }
 
 void Sistema::listarMascotas(){
-    cout << "====MASCOTAS===\n";
+    cout << "****MASCOTAS****\n";
     for(itrMasc = mapMascotas.begin(); itrMasc != mapMascotas.end(); ++itrMasc){
         itrMasc->second.mostrarDatosMascota();
     }
@@ -131,13 +131,12 @@ int Sistema::contarProp(){
 
 void Sistema::consultarPropietariosDeMascota(double idMasc){
     int ban = 0;
-    for( int i; i < propietarioxMascota.size(); i++ ){
-        if( propietarioxMascota[i].getPropietario().getIdProp() == idMasc ){
-            if( ban == 0 ){
-                cout << "Propietarios de " << propietarioxMascota[i].getMascota().getNombreMasc() << " son :\n";
-                ban = 1;
-            }
+    for( int i = 0; i < propietarioxMascota.size(); i++ ){
+        if( propietarioxMascota[i].getMascota().getIdMasc() == idMasc ){
+            ban = 1;
+            cout << "Propietarios de " << propietarioxMascota[i].getMascota().getNombreMasc() << " son:\n";
             propietarioxMascota[i].getPropietario().mostrarDatosPropietario();
+            
         }
     }
     if( ban == 0 ){
@@ -148,12 +147,10 @@ void Sistema::consultarPropietariosDeMascota(double idMasc){
 
 void Sistema::consultarMascotasDepropietario(double idProp){
     int ban = 0;
-    for( int i; i < propietarioxMascota.size(); i++ ){
+    for(int i = 0; i < propietarioxMascota.size(); i++){
         if( propietarioxMascota[i].getPropietario().getIdProp() == idProp ){
-            if( ban == 0 ){
-                cout << "Mascotas de " << propietarioxMascota[i].getPropietario().getNombreProp() << " son :\n";
-                ban = 1;
-            }
+            ban = 1;
+            cout << "Mascotas de " << propietarioxMascota[i].getPropietario().getNombreProp() << " son:\n";
             propietarioxMascota[i].getMascota().mostrarDatosMascota();
         }
     }
@@ -167,7 +164,7 @@ void Sistema::asociarPropietarioxMascota(double idProp, double idMasc){
     Propietario tempP;
     Mascota tempM;
     if(mapPropietarios.find(idProp) != mapPropietarios.end() && mapMascotas.find(idMasc) != mapMascotas.end()){
-        cout << "Se Relacionara La Mascota Y El Usuario\n";
+        cout << "Se Relaciono La Mascota Y El Usuario\n";
         tempP = this -> mapPropietarios[idProp];
         tempM = this -> mapMascotas[idMasc];
         PropietarioxMascota objet1(tempP, tempM);
@@ -177,8 +174,6 @@ void Sistema::asociarPropietarioxMascota(double idProp, double idMasc){
         cout << "No Existe El Propietario o La Mascota";
     }
     cout << "\n";
-    //cout << propietarioxMascota[0].getPropietario().getNombreProp() << "\n";
-    //cout << propietarioxMascota[0].getMascota().getNombreMasc() << "\n";
     return;
 }
 
@@ -196,7 +191,18 @@ void Sistema::cambiarEstatus(double idMasc, string fechaM){
     return;
 }
 
-void Sistema::eliminarPropietarioDeMascota(double idProp){      //TERMINAR
+void Sistema::eliminarPropietarioDeMascota(double idProp){
+    int ban = 0;
+    for(int i = 0; i < propietarioxMascota.size(); i++){
+        if(propietarioxMascota[i].getPropietario().getIdProp() == idProp){
+            ban = 1;
+            cout << "Se Elimino La Relacion\n";
+            propietarioxMascota.erase(propietarioxMascota.begin() + i);
+        }
+    }
+    if( ban == 0 ){
+        cout << "ID Invalido -> No Existe El Propietario";
+    }
     return;
 }
 
