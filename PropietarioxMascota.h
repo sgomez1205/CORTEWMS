@@ -8,13 +8,12 @@ class PropietarioxMascota{
     private:
         Propietario propietario;
         Mascota mascota;
-        double id;
     public:
         PropietarioxMascota();
-        PropietarioxMascota(Propietario propietario, Mascota mascota, double id);
+        PropietarioxMascota(Propietario propietario, Mascota mascota);
+        
         Propietario getPropietario();
         Mascota getMascota();
-        double getId();
 };
 
 #endif
