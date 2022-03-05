@@ -1,3 +1,10 @@
+/*
+PROYECTO CLINICA VETERINARIA
+Autores: Willian David Chapid, Miguel Angel Nivia y Sebastián Gómez Valencia.
+Códigos: 
+Funcionalidad General:
+Asignatura: Programación Orientada a Objetos
+*/
 #include <iostream>
 #include "Sistema.h"
 

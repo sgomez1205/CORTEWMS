@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Sistema.h"
-
+ //Creacion de iteradores para recorrer los mapas.
 map<double, Propietario>::iterator itrProp;
 map<double, Mascota>::iterator itrMasc;
 
@@ -167,8 +167,8 @@ void Sistema::asociarPropietarioxMascota(double idProp, double idMasc){
         cout << "Se Relaciono La Mascota Y El Usuario\n";
         tempP = this -> mapPropietarios[idProp];
         tempM = this -> mapMascotas[idMasc];
-        PropietarioxMascota objet1(tempP, tempM);
-        propietarioxMascota.push_back(objet1);
+        PropietarioxMascota objet1(tempP, tempM); //Crear nueva entidad de la unión tras asociación
+        propietarioxMascota.push_back(objet1);//Ingresar al vector 
     }
     else{
         cout << "No Existe El Propietario o La Mascota";
