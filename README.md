@@ -18,7 +18,7 @@ Usted ha sido contratado para crear un software de directorio telefónico para u
 área de tecnología de la organización ya tiene definido el diseño del sistema de información. Su labor principal es 
 implementarlo para satisfacer los requesitos.
 
-* Requisitos/Funcionalidades
+## Requisitos/Funcionalidades
 * El sistema almacenar el nombre completo, email, documento de identidad y teléfono de cada propietario 
 responsable. 
 * El sistema debe almacenar la información de cada mascota. Esta información consiste en la raza, el tipo: 
@@ -48,12 +48,12 @@ de identidad.
 * Debe usar C++ para el desarrollo del proyecto
   * Use Maps como la estructura de datos para almacenar la información de los propietarios
 
-# UML
+## UML
 ![UML-TRABAJO POO](https://github.com/sgomez1205/CORTEWMS/blob/master/UML-TRABAJO%20POO.png)
 
-# Links Importantes
+## Links Importantes
 * *Link UML: https://drive.google.com/file/d/1ot37AoLYy98uTDRAX8Fur9H-gLAky184/view?usp=sharing*
 * *Link Profe Luisa Rincon: https://github.com/lufe089/POO*
 * *Link Uso De Mapas/vectores/arrays/etc: https://www.geeksforgeeks.org/containers-cpp-stl/*
 
-## Fecha De Entrega: 7 marzo del 2022 / 11:59 PM
+# Fecha De Entrega: 7 marzo del 2022 / 11:59 PM
