@@ -1,7 +1,7 @@
 /*
 PROYECTO CLINICA VETERINARIA
 Autores: Willian David Chapid, Miguel Angel Nivia y Sebastián Gómez Valencia.
-Códigos: 
+Códigos: 8958691, 8965113 y 8963213
 Funcionalidad General:
 Asignatura: Programación Orientada a Objetos
 */
