@@ -40,9 +40,9 @@ double Propietario::getTelefono(){
 }
 
 void Propietario::setEmail(string email){
-    this->email = email;
+    this -> email = email;
 }
 
 void Propietario::setTelefono(double telefono){
-    this->telefono = telefono;
+    this -> telefono = telefono;
 }
