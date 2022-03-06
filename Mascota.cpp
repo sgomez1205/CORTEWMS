@@ -29,7 +29,7 @@ void Mascota::mostrarDatosMascota(){
     cout << "-Info:\n";
     cout << "-Nombre: " << nombreMasc << "\n";
     cout << "-IdMascota: " << idMasc << "\n";
-    cout << "-Edad(Años): " << edad << "\n";
+    cout << "-Edad(Anos): " << edad << "\n";
     if( tipo == 1 ){
         cout << "-Tipo: Perro" << "\n";
     }

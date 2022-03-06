@@ -55,7 +55,7 @@ void menu(Sistema sistema){
                     break;
             case 2: cout << "\nID Usuario A Modificar: ";
                     cin >> idProp;
-                    cout << "\nQue Desea Modificar:\n(1)Email\n(2)Telefono";
+                    cout << "\nQue Desea Modificar:\n(1)Email\n(2)Telefono\n:";
                     cin >> x;
                     sistema.modificarPropietario(idProp, x);
                     break;

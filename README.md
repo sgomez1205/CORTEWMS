@@ -49,7 +49,7 @@ de identidad.
   * Use Maps como la estructura de datos para almacenar la información de los propietarios
 
 ## UML
-![UML-TRABAJO POO](https://github.com/sgomez1205/CORTEWMS/blob/master/UML-TRABAJO%20POO.png)
+![UML FINAL-TRABAJO POO](https://github.com/sgomez1205/CORTEWMS/blob/master/UML%20FINAL-%20TRABAJO%20POO.png)
 
 ## Links Importantes
 * *Link UML: https://drive.google.com/file/d/1ot37AoLYy98uTDRAX8Fur9H-gLAky184/view?usp=sharing*

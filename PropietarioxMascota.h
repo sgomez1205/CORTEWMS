@@ -19,7 +19,7 @@ class PropietarioxMascota{
         PropietarioxMascota(); // Constructor por default - necesario para uso de constructor por parametros
         PropietarioxMascota(Propietario propietario, Mascota mascota); // Constructor por parametros.
     //Metodos Programa
-        Propietario getPropietario(); //Usado para obtener propietario
+        Propietario * getPropietario(); //Usado para obtener propietario
         Mascota getMascota(); //Usado para obtener mascota
 };
 
